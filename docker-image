@@ -1,0 +1,4 @@
+docker build -t dockerfiles .
+docker tag dockerfiles dockerfiles:latest
+docker push dockerfiles:latest
+docker run -d -p 80:80 dockerfiles:latest
